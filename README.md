@@ -1,62 +1,92 @@
-# projectWD
+# ProjectWD
 
-ProjectWD is a static site copy of the Department of Expenditure (Ministry of Finance) frontend used for learning and demonstration. The site has been reorganized for easy local preview and static hosting.
+ProjectWD is a **static frontend learning project** that recreates the user interface of the Department of Expenditure (Ministry of Finance) website for **educational and demonstration purposes only**. The goal of this project is to understand real‑world website structure, asset organization, and static site hosting workflows.
 
-## What's in this repository
+This project does **not** include backend logic or official data handling and is not affiliated with any government organization.
 
-- `public/` — all site pages and assets (recommended deployment root)
-  - `public/*.html` — entry pages (about.html, mainpage.html, E-Services.html, etc.)
-  - `public/assets/css/` — stylesheets
-  - `public/assets/js/` — JavaScript
-  - `public/assets/images/` — images and screenshots
-- `config/settings.json` — local dev settings (kept in `config/`)
+---
 
-## Quick start — preview locally
-From the repository root run one of these commands to serve the `public/` folder:
+## What this project demonstrates
 
-Using Python 3:
+* Organizing a static website using a clean `public/` deployment root
+* Managing assets (CSS, JavaScript, images) in a scalable structure
+* Serving static sites locally for development and testing
+* Preparing a frontend project for GitHub hosting and review
 
-```powershell
-Set-Location 'C:\sem1\wd\projectWD-main\public'
-python -m http.server 8000
-# Open http://localhost:8000
+---
+
+## Project structure
+
+```
+projectWD/
+├── public/                  # Deployment root
+│   ├── *.html               # Entry pages (mainpage.html, about.html, E-Services.html, etc.)
+│   └── assets/
+│       ├── css/             # Stylesheets
+│       ├── js/              # JavaScript files
+│       └── images/          # Images and screenshots
+├── config/
+│   └── settings.json        # Local development settings
+├── .gitignore
+├── .gitattributes
+└── README.md
 ```
 
-Using `live-server` (requires Node.js):
+---
 
-```powershell
-npx live-server public --port=5502
-# Open http://127.0.0.1:5502
+## Run locally (quick start)
+
+This project is intended to be opened using the **Live Server extension in VS Code**.
+
+### Steps
+
+1. Open the project folder in VS Code
+2. Install the **Live Server** extension (by Ritwick Dey)
+3. Right‑click `public/mainpage.html`
+4. Click **Open with Live Server**
+
+The site will open at:
+
 ```
+http://127.0.0.1:5500/public/mainpage.html
+```
+
+---
 
 ## Path handling notes
 
-- HTML files in `public/` reference CSS/JS using `assets/css/...` and `assets/js/...`.
-- CSS files use `url('../images/...')` to reference images in `public/assets/images`.
+* HTML files reference styles and scripts using:
 
-If you move files again, update references accordingly.
+  ```
+  assets/css/...
+  assets/js/...
+  ```
+* CSS files reference images using:
 
-## Prepare repo for GitHub
+  ```
+  ../images/...
+  ```
+* If files are moved, relative paths must be updated accordingly.
 
-I added a recommended `.gitignore` and `.gitattributes` (see below). To push to GitHub:
+---
 
-1. Create a repository on GitHub (e.g. `your-username/projectWD`).
-2. Run these commands locally from the project root:
+## Git configuration
 
-```powershell
-git init
-git checkout -b main
-git add .
-git commit -m "chore: reorganize site into public/ and consolidate assets"
-# add remote (replace URL with your GitHub repo)
-git remote add origin https://github.com/<your-username>/<repo>.git
-git push -u origin main
-```
+* `.gitignore` excludes OS files, IDE settings, logs, and temporary files
+* `.gitattributes` ensures proper handling of binary files (images) and normalizes text files
 
-## Files added for Git
+Assets inside `public/assets/images/` are intentionally tracked.
 
-- `.gitignore` — excludes OS, IDE, logs, and common temp files (does not ignore `public/assets/images`).
-- `.gitattributes` — ensures binary files (images) are treated as binary and normalizes text files.
+---
 
+## Disclaimer
 
+This project is created strictly for **learning and academic purposes**. All trademarks, names, and references belong to their respective owners.
 
+---
+
+## Author
+
+**Shraddha Khetmalis**
+B.Tech Computer Science Engineering (2nd Year)
+Vishwakarma Institute of Technology, Pune
