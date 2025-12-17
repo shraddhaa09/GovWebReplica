@@ -1,0 +1,400 @@
+/* Universal Box Sizing - Must be at the top */
+* {
+  box-sizing: border-box;
+}
+
+/* Your other CSS styles follow */
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Additional styles... */
+
+  header {
+    background-color: #004080;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1;
+  }
+ header .actions {   
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+header .actions a {
+  color: rgb(0, 153, 255);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+header .actions a:hover {
+  text-decoration: underline;
+}
+.bphoto {
+  width: 100%;
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the element */
+}
+
+.logo-section {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+}
+.logo {
+  flex: 1;
+}
+.logo2{
+  height: 60px; 
+}
+.logo2{
+  display: flex;
+  gap: 10px;
+}
+.logo2 img {
+  height: 60px; 
+}
+#logo{
+  display: inline-flexbox;
+}
+#logo2{
+  display: inline-flexbox;
+}
+/* Navigation Bar Styles */
+#nav {
+  height: 50px;
+  background-color: #fd7e14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#nav a:hover {
+  background-color: rgb(97, 97, 249);
+  color: white;
+  transform: translateY(-2px);
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 400px;
+  padding-right: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#high-bar {
+  padding-top: 25px;
+  text-align: center;
+  background-color: rgb(98, 98, 251);
+  color: white;
+  height:50px;
+  width: 250px;
+  font-weight: bold;
+  
+}
+
+#high-txt {
+  padding-top: 25px;
+  text-align: center;
+  background-color: #fd7e14;
+  color:white;
+  height: 50px;
+  width: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#moving-text {
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+  #about{
+ 
+    width: 800px;
+    height: 200px;
+  }
+ #highlights{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnRQQ4bbFczg4YP5tcOF8SIY3hVuPUtQ4TDA&s'); 
+     display: inline-flex;
+     width: 100%;
+ }
+  #whatsnew{
+    margin: 30px 30px 30px 30px;
+    background-color: #fff;
+    height:350px;
+    width: 450px;
+    border-radius: 3%;
+    border: 2px solid black;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  #Events{
+    margin: 30px 30px 30px 30px;
+    background-color: #fff;
+    height:350px;
+    width: 450px;
+    border-radius: 3%;
+    border: 2px solid black;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  #News{
+    margin: 30px 30px 30px 30px;
+    background-color: #fff;
+    height:350px;
+    width: 450px;
+    border-radius: 3%;
+    border: 2px solid black;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  #News:hover,#Events:hover,#whatsnew:hover{
+    transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  #NIR{
+    padding-left: 30px;
+    height:250px;
+    width: 250px;
+  }
+  #shri{
+    padding-left: 30px;
+    height:250px;
+    width: 250px;
+  }
+  #box1{
+    padding-bottom: 10px;
+    background-color: #f0b4d5;
+    height: 36px;
+    width: 283px;
+    border: 2px solid black;
+  }
+ /* Container Styling */
+/* Main Container */
+#d1 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#content-wrapper {
+  background-color: rgba(0, 0, 255, 0.05); /* Light transparent blue */
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 1000px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 50px 0;
+}
+
+/* About Section */
+#about h1 {
+  color: blueviolet;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#about h2 {
+  color: orangered;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  color: #333;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Leaders Section */
+#leaders {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.leader-card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 160px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.leader-card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  object-fit: cover;
+}
+
+.leader-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.leader-card .name {
+  font-weight: bold;
+  color: #333;
+}
+
+.leader-card .designation {
+  color: gray;
+  font-size: 14px;
+}
+
+/* Scroll-triggered animation */
+.animated {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.5s ease;
+}
+
+.animated.show {
+  opacity: 1;
+  transform: translateY(0) scale(1.1);
+}
+
+ #whatsnew:hover{
+    background-color: rgb(189, 227, 248);
+  }
+#News:hover{
+  background-color: rgb(189, 227, 248);
+}
+#Events:hover{
+  background-color: rgb(189, 227, 248);
+}
+.divisions {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.divisions h2 {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.division {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.division-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.division-item img {
+  width: 30px;
+  height: 30px;
+}
+
+.black {
+  background-color: #000;
+}
+
+.purple {
+  background-color: #7D3C98;
+}
+
+.blue {
+  background-color: #154360;
+}
+
+.green {
+  background-color: #117A65;
+}
+
+.teal {
+  background-color: #138D75;
+}
+
+.red {
+  background-color: #8e362e;
+}
+
+.light-green {
+  background-color: #53b77d;
+}
+.division-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.profile-section {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 10px;
+}
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+.username {
+  color: #000;
+  font-weight: bold;
+}
+.logout {
+  font-size: 12px;
+  color: red;
+  text-decoration: none;
+}
+
+/* Container for report cards */

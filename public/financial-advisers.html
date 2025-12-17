@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Financial Advisers - Ministry of Finance</title>
+    <link rel="stylesheet" href="assets/css/style.css"> 
+</head>
+<body>
+    <div class="logo-section"> 
+        </div>
+
+    <header>
+        <h1>List of Financial Advisers</h1>
+    </header>
+
+    <nav> 
+        <a onclick="showSection('organization')">Organization Structure</a> 
+        <a onclick="showSection('department')">About Department of Expenditure</a> 
+        <a onclick="showSection('financial-advisers')">List of Financial Advisers</a> 
+        <a onclick="showSection('whos-who')">Who's Who</a> 
+    </nav>
+
+    <div id="financial-advisers" class="section active"> 
+        <h2>List of Financial Advisers</h2>
+        </div>
+
+    <footer class="footer">
+        </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

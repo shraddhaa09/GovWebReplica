@@ -1,0 +1,227 @@
+    /* General Styles */
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #000000;
+      line-height: 1.6;
+    }
+    .logo-section {
+      background-color: #ffffff;  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 2px solid #143a60;
+    }
+    .logo-left {
+      flex: 1;
+    }
+    .logo-left img {
+      height: 60px; /* Adjust logo size */
+    }
+    .logo-right {
+      display: flex;
+      gap: 10px;
+    }
+    .logo-right img {
+      height: 60px; /* Adjust logo size */
+    }
+    header {
+      background-color: #004080;
+      color: rgb(247, 244, 244);
+      padding: 1rem;
+      text-align: center;
+      line-height: 1;
+      
+    }
+    
+    header .actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    header .actions a {
+      color: rgb(0, 153, 255);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    header .actions a:hover {
+      text-decoration: underline;
+    
+    }
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: #3498db;
+      color: white;
+    }
+    
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    
+    /* Breadcrumb */
+    .breadcrumb {services-table th
+      background: #f4f4f4;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      margin: 20px 0;
+    }
+    
+    .E-Services{
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .E-Services h1 {
+      
+      margin-bottom: 20px;
+      background-image: url('../Inner-banner.jpg'); /* Replace with the path to your image */
+      background-size: auto; /* Ensures the image covers the entire background */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-position: center; /* Centers the image */
+      color: rgb(255, 255, 255); /* Text color for better contrast */
+      padding: 10px; /* Adds padding to make the text stand out */
+      border-radius: 5px; /* Optional: adds rounded corners */
+       margin: 10px 0; 
+      font-size: 28px;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    .e-services-box, .additional-info {
+          width: 60%;
+          margin: 20px auto;
+          padding: 20px;
+          background: rgba(255, 255, 255, 0.8);
+          text-align: center;
+          border-radius: 10px;
+          font-size: 1.2rem;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+          border: 2px solid #3498db;
+        }
+        .e-services-box p, .additional-info p {
+          font-weight: bold;
+          color: #004080;
+        }
+    
+    .section img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .services-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+    
+    
+    .services-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .services-table th {
+      background: #3498db;
+      color: white;
+    }
+    
+    .services-table tr:nth-child(even) {
+      background: #f4f4f4;
+    }
+    
+    .services-table tr:hover {
+      background: #ddd;
+    }
+    
+    .services-table a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    
+    .services-table a:hover {
+      text-decoration: underline;
+    }
+    .logo-slider {
+      position: relative;
+      max-width: 100%;
+      margin: 20px auto;
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    
+    .slider-container {
+      overflow: hidden;
+      width: 100%;
+    }
+    
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+      flex: 0 0 20%; /* Adjust the percentage to control how many images are visible */
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .slide img {
+      max-width: 100%;
+      max-height: 80px;
+      object-fit: contain;
+    }
+    
+    /* Slider Buttons */
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 10;
+    }
+    
+    .slider-btn.prev {
+      left: 10px;
+    }
+    
+    .slider-btn.next {
+      right: 10px;
+    }
+    
+    .slider-btn:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .footer {
+      background-color: #002147;
+      color: white;
+      padding: 20px 0;
+      font-family: Arial, sans-serif;
+      }
+      
+      .footer-bottom {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid #f8b400;
+      margin-top: 20px;
+      }
+      html{
+        scroll-behavior: smooth;
+      }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acts and Rules</title>
+    <link rel="stylesheet" href="assets/css/acts and rules.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll to main content
+            document.querySelector('a[href="#recruitment-rules"]').addEventListener('click', function(event) {
+                event.preventDefault();
+                document.querySelector('#recruitment-rules').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            // Redirect to Ministry of Expenditure main page
+            document.querySelectorAll('a').forEach(function(link) {
+                if (link.textContent.includes('Department of Expenditure')) {
+                    link.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        window.location.href = 'https://www.doe.gov.in/';
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>भारत सरकार || वित्त मंत्रालय <br> GOVERNMENT OF INDIA || MINISTRY OF FINANCE</h1>
+        <div class="actions">
+            <a href="#recruitment-rules">Skip to Main Content</a>
+            <a href="file:///C:/Users/shrad/OneDrive/Documents/Desktop/web dev/project WD/mainpage.html">Department of Expenditure</a>
+            <a href="https://www.india.gov.in/spotlight/group-twenty-g20">G20</a>
+            <a href="https://swachhbharatmission.ddws.gov.in/">Swachh Bharat</a>
+            <a href="https://www.makeinindia.com/">Make In India</a>
+        </div>
+    </header>
+    <div class="logo-section">
+        <div class="logo-left">
+            <img src="C:\Users\shrad\OneDrive\Documents\Desktop\web dev\project WD\Department\Screenshot 2024-12-27 083335.png" alt="Left Logo">
+        </div>
+        <div class="logo-right">
+            <img src="india gov in.png" alt="Right Logo 1">
+            <img src="my gov logo.png" alt="Right Logo 2">
+            <img src="swaccha bharat.png" alt="Right Logo 3">
+        </div>
+    </div>
+    <div id="recruitment-rules" class="recruitment-rules">
+        <h2>Recruitment Rules</h2>
+    </div>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Draft amendment in Recruitment Rules for the Post of Research Assistant, Junior Research Assistant and Computor in Pay Research Unit of this department</td>
+                    <td>14/01/2020</td>
+                    <td><a href="#">Download (3.66 MB)</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Draft Recruitment Rules of SCD - Special Grade</td>
+                    <td>03/09/2019</td>
+                    <td><a href="#">Download (1.27 MB)</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Recruitment Rules for the post of Senior Investigator</td>
+                    <td>13/02/2019</td>
+                    <td><a href="#">Download (279.54 KB)</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Draft Amendment in the Recruitment Rules for the post of Sr. Investigator</td>
+                    <td>06/04/2018</td>
+                    <td><a href="#">Download (2.58 MB)</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer-logos">
+        <img src="Public Grievances.png" alt="Public Grievances Logo">
+        <img src="PMNRF.png" alt="PMNRF Logo">
+        <img src="my gov logo.png" alt="MyGov Logo">
+        <img src="G20 in.png" alt="G20 Logo">
+        <img src="swaccha bharat.png" alt="Swaccha Bharat Logo">
+        <img src="india gov in.png" alt="India Gov Logo">
+    </div>
+    
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Website Policies</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Web Information Manager</a></li>
+                <li><a href="#">Accessibility Statement</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </nav>
+        <p class="footer-info">
+            Managed, Designed and Developed by National Informatics Centre (NIC) <br>
+            Last Updated: 27 January, 2025 <br>
+            Visitors: 6,404,388
+        </p>
+    </footer>
+</body>
+</html>

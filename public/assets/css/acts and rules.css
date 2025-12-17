@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #002e82;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.3;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.actions a {
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.actions a:hover {
+    background-color: rgba(255, 85, 0, 0.842);
+}
+
+.logo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo-left img {
+    max-width: 200px;
+    height: auto;
+}
+
+.logo-right img {
+    max-width: 150px;
+    height: auto;
+    padding: 10px;
+}
+
+/* Recruitment Rules Section */
+.recruitment-rules {
+    background-image: url('../Inner-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.recruitment-rules h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Table Section */
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #004c7f;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+a {
+    color: #004c7f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Logos Section */
+.footer-logos {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.footer-logos img {
+    height: 70px;
+    width: auto;
+    padding: 10px;
+}
+/* Footer Section */
+footer {
+    background-color: #004c7f;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-nav {
+    background-color: #004c7f;
+    padding: 20px 0;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-info {
+    background-color: #004c7f;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #ccc;
+}

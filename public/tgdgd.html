@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Services - Government of India</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    header {
+        background-color: #0e3a56;
+        color: #fff;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo img {
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header nav ul li {
+        margin-left: 20px;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    header nav ul li a:hover {
+        color: #f39c12;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .services, .news {
+        background-color: #ffffff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .services h3, .news h3 {
+        font-size: 1.5rem;
+        color: #0e3a56;
+    }
+
+    .services ul, .news ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .services ul li, .news ul li {
+        margin-bottom: 10px;
+    }
+
+    .services ul li a, .news ul li a {
+        text-decoration: none;
+        color: #0e3a56;
+    }
+
+    .services ul li a:hover, .news ul li a:hover {
+        color: #f39c12;
+    }
+
+    footer {
+        background-color: #0e3a56;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    footer a {
+        color: #f39c12;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        main {
+            flex-direction: column;
+        }
+
+        header nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        header nav ul li {
+            margin: 10px 0;
+        }
+
+        .container {
+            width: 100%;
+            padding: 0 10px;
+        }
+    }
+</style>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Screenshot 2024-12-27 083335.png" alt="Financial Services Logo">
+                <p>Government of India</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Schemes</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="container">
+            <!-- Introduction Section -->
+            <section>
+                <h2>Welcome to the Financial Services Department</h2>
+                <p>The Financial Services Department, under the Ministry of Finance, is responsible for formulating and
+                    implementing policies in the financial sector. It plays a crucial role in managing and regulating the
+                    financial institutions and markets of India.</p>
+            </section>
+
+            <!-- Services Section -->
+            <section class="services">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">Banking and Insurance Services</a></li>
+                    <li><a href="#">Financial Market Regulation</a></li>
+                    <li><a href="#">Public Debt Management</a></li>
+                    <li><a href="#">Financial Inclusion Programs</a></li>
+                </ul>
+            </section>
+
+            <!-- News Section -->
+            <section class="news">
+                <h3>Latest News</h3>
+                <ul>
+                    <li><a href="#">New Banking Reforms Announced</a></li>
+                    <li><a href="#">Economic Survey 2024 Released</a></li>
+                    <li><a href="#">Government Plans to Boost Financial Inclusion</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Financial Services Department, Government of India. All Rights Reserved.</p>
+            <p>For inquiries, contact us at: <a href="mailto:info@financialservices.gov.in">info@financialservices.gov.in</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

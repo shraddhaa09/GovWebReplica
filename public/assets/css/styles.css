@@ -1,0 +1,28 @@
+/* styles.css */
+
+/* Make the navbar sticky at the top */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Customize the footer */
+footer {
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Add some padding and margin to sections */
+section {
+    padding: 40px 0;
+}
