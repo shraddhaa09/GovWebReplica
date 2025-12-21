@@ -2,7 +2,6 @@
 
 ProjectWD is a **static frontend learning project** that recreates the user interface of the Department of Expenditure (Ministry of Finance) website for **educational and demonstration purposes only**. The goal of this project is to understand real‑world website structure, asset organization, and static site hosting workflows.
 
-This project does **not** include backend logic or official data handling and is not affiliated with any government organization.
 
 ---
 
