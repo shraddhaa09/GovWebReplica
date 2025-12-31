@@ -30,19 +30,21 @@ This project focuses purely on frontend concepts. No backend, database, or live 
 
 ## 📁 Project Structure
 
+```text
 projectWD/
-├── public/ # Deployment root
-│ ├── *.html # Entry pages (mainpage.html, about.html, E-Services.html, etc.)
-│ └── assets/
-│ ├── css/ # Stylesheets
-│ ├── js/ # JavaScript files
-│ └── images/ # Images and screenshots
+├── public/                  # Deployment root
+│   ├── *.html               # Entry pages (mainpage.html, about.html, E-Services.html, etc.)
+│   └── assets/
+│       ├── css/             # Stylesheets
+│       ├── js/              # JavaScript files
+│       └── images/          # Images and screenshots
 ├── config/
-│ └── settings.json # Local development settings
+│   └── settings.json        # Local development settings
 ├── .gitignore
 ├── .gitattributes
 └── README.md
----
+```
+
 
 ## ▶️ Run Locally (Quick Start)
 
